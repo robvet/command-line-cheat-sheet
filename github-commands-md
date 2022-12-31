@@ -1,4 +1,23 @@
-…or create a new repository on the command line
+# Git Hub Command Line Cheat-Sheet
+
+## Create a new repository on the command line
+
+```
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/robvet/test.git
+git push -u origin mainaz login
+```
+
+### Login in CLI (username)
+```
+az login -u myemail@address.com
+```
+
+
+
 echo "# test" >> README.md
 git init
 git add README.md
