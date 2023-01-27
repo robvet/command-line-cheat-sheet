@@ -59,7 +59,44 @@ az group delete --name myResourceGroup
 ```
 
 ## ACR
+
+### Authenticate to Azure Container Registry
+```
+az acr login -n <registry name>
+```
+
 ### Build Image and Push to ACR (ACR Tasks)
 ```
 az acr build --registry <container_registry_name> --image webimage .
 ```
+
+## AKS
+
+### Get credentials and clear cache
+```
+az aks get-credentials -g <resource group>-rg -n <aks cluster>-aks --overwrite-existing
+```
+
+### Port-forward -- Invoke POD with a private clusterIP address
+```
+kubectl port-forward <running POD> 8080:8080   # <host port>:<container port>
+```
+
+### Get events from troubleshooting
+```
+kubectl get events -n api <--sort-by>
+Kubectl get endpoints
+```
+
+### Execute a command inside a running container
+```
+kubectl exec -it <podname> -n api -- /bin/sh
+curl http://localhost/<some url>
+
+docker exec sql /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<password>' -Q "SELECT NAME FROM sys.databases"
+```
+
+
+
+
+
