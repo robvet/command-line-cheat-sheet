@@ -86,6 +86,8 @@ kubectl port-forward <running POD> 8080:8080   # <host port>:<container port>
 ```
 kubectl get events -n api <--sort-by>
 Kubectl get endpoints
+kubectl describe resourceType/name 
+kubectl logs runningPodName
 ```
 
 ### Execute a command inside a running container
