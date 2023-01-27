@@ -21,7 +21,7 @@ az account list --output table
 
 ### Set subscription
 ```
-az account set --subscription "xxx"
+az account set --subscription "<subscription Id>"
 ```
 ## Listing locations and resources / general
 
