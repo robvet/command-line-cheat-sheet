@@ -74,7 +74,7 @@ az acr build --registry <container_registry_name> --image webimage .
 
 ### Get credentials and clear cache
 ```
-az aks get-credentials -g <resource group>-rg -n <aks cluster>-aks --overwrite-existing
+az aks get-credentials -g <resource group> -n <aks cluster> --overwrite-existing
 ```
 
 ### Port-forward -- Invoke POD with a private clusterIP address
@@ -98,7 +98,16 @@ curl http://localhost/<some url>
 docker exec sql /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<password>' -Q "SELECT NAME FROM sys.databases"
 ```
 
+### Stop (disable) cluster when not in use -- optimze costs
+```
+az aks stop -g <resource group> -n <aks cluster>
 
+# Confirm VM has stopped - powerState: stopped 
+az aks show -g <resource group> -n <aks cluster>
+
+# Restart cluster VM
+az start stop -g <resource group> -n <aks cluster>
+```
 
 
 
