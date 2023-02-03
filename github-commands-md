@@ -17,9 +17,14 @@ git branch -M main
 git push -u origin main
 ```
 
+## Create local branch shortcut command
+```
+git checkout -B <branch name>
+```
+
 ## Fetch branch from upstram repo
 ```
 # Applicable to fetch a branch when forked to upstream repo
-git fetch upstream models-package # fetch models-package branch
-git checkout -B models-package upstream/models-package # create local branch for models-pacakge
+git fetch upstream <branch name> # fetch remote branch
+git checkout -B <branch name> upstream/<bracnh name> # create local branch for models-pacakge
 ```
