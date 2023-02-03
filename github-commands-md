@@ -16,3 +16,10 @@ git remote add origin https://github.com/robvet/test.git
 git branch -M main
 git push -u origin main
 ```
+
+## Fetch branch from upstram repo
+```
+# Applicable to fetch a branch when forked to upstream repo
+git fetch upstream models-package # fetch models-package branch
+git checkout -B models-package upstream/models-package # create local branch for models-pacakge
+```
