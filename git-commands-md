@@ -22,6 +22,12 @@ git push -u origin main
 git checkout -B <branch name>
 ```
 
+## Set remote (upstream) server
+```
+git remote -v # Lists remote repos 
+git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git # Add remote repo, in this case, upstream
+```
+
 ## Fetch branch from upstram repo
 ```
 # Applicable to fetch a branch when forked to upstream repo
