@@ -13,7 +13,9 @@ docker build -f ../../subfolder/Dockerfile .
 
 ### Docker Run
 ```
-docker run –d –p 8090:8082  --name contaniner1 imagedemo:1.0
+docker run –d –p 8090:80  --name contaniner1 imagedemo:1.0
+
+(8090:80 maps to HostPort:ContainerPort)
 ```
 
 ### Run Commands Inside Container
