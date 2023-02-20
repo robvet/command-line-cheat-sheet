@@ -7,7 +7,7 @@ docker build -t mycoolimage:1.0 .
 
 ### Docker Build - Dockerfile in Different Subfolder
 ```
-docker build -t mycoolimage:1.0 -f /subfolder/Dockerfile .
+docker build -t mycoolimage:1.0 -f subfolder/Dockerfile .
 docker build -f ../../subfolder/Dockerfile .
 ```
 
