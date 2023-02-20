@@ -5,10 +5,10 @@
 docker build -t mycoolimage:1.0 .
 ```
 
-### Docker Build Specifiy Dockerfile
+### Docker Build - Dockerfile in Different Subfolder
 ```
-docker build -f /home/me/myapp/dockerfiles/debug /home/me/myapp
-docker build -f ../../../../dockerfiles/debug /home/me/myapp
+docker build -t mycoolimage:1.0 -f /subfolder/Dockerfile .
+docker build -f ../../subfolder/Dockerfile .
 ```
 
 ### Docker Run
