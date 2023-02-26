@@ -120,5 +120,9 @@ az aks show -g <resource group> -n <aks cluster>
 az start stop -g <resource group> -n <aks cluster>
 ```
 
-
+### Create yaml file
+```
+# Kubectl will output a base yaml file without instantiating a container
+kubectl run <some name> --image=<ACR Name>.azurecr.io/<Image Name>:<tag> --dry-run=client -oyaml > yaml_file
+```
 
