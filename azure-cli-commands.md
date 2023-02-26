@@ -71,6 +71,16 @@ az acr login -n <registry name>
 az acr build --registry <container_registry_name> --image webimage .
 ```
 
+### Import Image from One Subscription to Another
+```
+az acr login -n <destinationRegistry>
+
+az acr import \
+  --name <destinationRegistry> \
+  --source <sourceRegistry>.azurecr.io/<Image:Tag> \
+  --username <SourceRegistryUsername> \
+  --password <SourceRegistryPassword>
+```
 ## AKS
 
 ### Get credentials and clear cache
