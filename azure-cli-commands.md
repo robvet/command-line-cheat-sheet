@@ -73,7 +73,7 @@ az acr build --registry <container_registry_name> --image webimage .
 
 ### Import Image from One Subscription to Another
 ```
-az acr login -n <destinationRegistry>
+az acr login -n <destination ACR>
 
 az acr import \
   --name <destinationRegistry> \
@@ -126,3 +126,14 @@ az start stop -g <resource group> -n <aks cluster>
 kubectl run <some name> --image=<ACR Name>.azurecr.io/<Image Name>:<tag> --dry-run=client -oyaml > yaml_file
 ```
 
+### Integrate ACR Regsitry with an AKS Cluster
+```
+# Attach ACR Regsitry to an Existing AKS Cluser
+$ az aks update -g <Resource Group> -n <AKS Cluster Name> --attach-acr <ACR Name>
+
+# Check status of ACR integrated AKS 
+az aks check-acr -g <resource group> -n <AKS Cluster Name> --acr <ACR Name>
+
+# Detach existing ACR from an AKS Cluster
+$ az aks update -g <resource group> -n <AKS Cluster Name> --detach-acr <ACR Name>
+```
