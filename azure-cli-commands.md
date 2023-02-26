@@ -62,6 +62,7 @@ az group delete --name myResourceGroup
 
 ### Authenticate to Azure Container Registry
 ```
+// Docker Desktop must be running
 az acr login -n <registry name>
 ```
 
