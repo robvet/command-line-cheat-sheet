@@ -20,6 +20,24 @@ docker run –d –p 8090:80  --name contaniner1 imagedemo:1.0
 docker run -d -p 3000:3000 --name web --net fabmedical content-web
 ```
 
+### Push Docker Image to Registry
+```
+// First, tag image
+docker tag <name of image> <name of ACR>/<namespace>/<name of image>
+
+// Example of tagging image
+docker tag content-web peteacr01.azurecr.io/wthaks/content-web
+
+// Push image to registry
+docker push <name of ACR>/<namespace>/<name of image> 
+
+// Example of pushing image
+docker push peteacr01.azurecr.io/wthaks/content-web 
+
+// List images in repository
+az acr repository list --name <name of ACR>
+```
+
 ### Destructive Comands
 ```
 // Kill a container
