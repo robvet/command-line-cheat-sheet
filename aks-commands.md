@@ -55,7 +55,8 @@ kubectl logs runningPodName
 ### Execute a command inside a running container
 ```
 kubectl exec -it <podname> -n api -- /bin/sh
-curl http://localhost/<some url>
+kubectl exec -it <podname> -- /bin/bash
+curl http://localhost:<port>/<some url>
 
 docker exec sql /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<password>' -Q "SELECT NAME FROM sys.databases"
 ```
