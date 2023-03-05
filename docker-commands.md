@@ -28,7 +28,7 @@ docker tag <name of image> <name of ACR>/<namespace>/<name of image>
 // Example of tagging image
 docker tag content-web peteacr01.azurecr.io/wthaks/content-web
 
-// Push image to registry
+// Secondly, push image to registry
 docker push <name of ACR>/<namespace>/<name of image> 
 
 // Example of pushing image
