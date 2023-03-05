@@ -13,9 +13,23 @@ docker build -f ../../subfolder/Dockerfile .
 
 ### Docker Run
 ```
+// Port mapping: (8090:80 maps to HostPort:ContainerPort)
 docker run –d –p 8090:80  --name contaniner1 imagedemo:1.0
 
-(8090:80 maps to HostPort:ContainerPort)
+// add local Docker network with 'net' command
+docker run -d -p 3000:3000 --name web --net fabmedical content-web
+```
+
+### Destructive Comands
+```
+// Kill a container
+docker kill <container id>
+
+// Kill dangling imafges
+docker image prune 
+
+// add local Docker network with 'net' command
+docker run -d -p 3000:3000 --name web --net fabmedical content-web
 ```
 
 ### Run Commands Inside Container
