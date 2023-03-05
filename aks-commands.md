@@ -2,7 +2,7 @@
 
 ### Great reference
 ```
-[az aks get-credentials -g <resource group> -n <aks cluster> --overwrite-existing](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ```
 
 ### Get credentials and clear cache
