@@ -18,6 +18,12 @@ kubectl get nodes
 kubectl get nodes -o custom-columns=NAME:'{.metadata.name}',REGION:'{.metadata.labels.topology\.kubernetes\.io/region}',ZONE:'{metadata.labels.topology\.kubernetes\.io/zone}'
 ```
 
+### Trobuleshoot 
+```
+# Pods
+kubectl describe pod <pod name>
+```
+
 ### Include all K8s namespaces parameter (beyond default namespace)
 ```
 // Shows objects outside of default namespace
