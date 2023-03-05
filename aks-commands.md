@@ -9,6 +9,14 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ```
 az aks get-credentials -g <resource group> -n <aks cluster> --overwrite-existing
 ```
+### Query the cluster nodes
+```
+# Show nodes, but not the availability zones (if provisioned)
+kubectl get nodes
+
+# Complex query to see each node and its corresponding availability zone
+kubectl get nodes -o custom-columns=NAME:'{.metadata.name}',REGION:'{.metadata.labels.topology\.kubernetes\.io/region}',ZONE:'{metadata.labels.topology\.kubernetes\.io/zone}'
+```
 
 ### Include all K8s namespaces parameter (beyond default namespace)
 ```
@@ -17,6 +25,12 @@ kubectl get pods --all-namespaces
 
 // Short version of command
 kubectl get pods -A
+```
+
+### Open 'AKS Workloads' portal view from command line
+```
+// Opens AKS portal in web browser
+aks browse --name <AKS Cluster Name> --resource-group <Resource Group Name>
 ```
 
 ### Port-forward -- Invoke POD with a private clusterIP address
