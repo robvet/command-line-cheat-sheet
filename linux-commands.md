@@ -4,3 +4,8 @@
 ```
 rm -r <directory name>
 ```
+
+## Show what ports are running (useful for troubleshooting
+```
+sudi netstat -at | less
+```
