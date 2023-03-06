@@ -5,6 +5,12 @@
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ```
 
+### Install Kubectl 
+```
+# Download client to /usr/local/bin/kubectl
+az aks install-cli
+```
+
 ### Get credentials and clear cache
 ```
 az aks get-credentials -g <resource group> -n <aks cluster> --overwrite-existing
