@@ -22,6 +22,7 @@ kubectl get nodes -o custom-columns=NAME:'{.metadata.name}',REGION:'{.metadata.l
 ```
 # Pods
 kubectl describe pod <pod name>
+kubectl log <podname>
 ```
 
 ### Include all K8s namespaces parameter (beyond default namespace)
@@ -32,6 +33,23 @@ kubectl get pods --all-namespaces
 // Short version of command
 kubectl get pods -A
 ```
+
+### Scale
+```
+# Nodes
+az aks nodepool scale -g <Resource Group name> --cluster-name <AKS Cluster name> --name <Name of AKS Nodepool> --node-count 1
+```
+
+### Watch cluster events
+```
+kubectl get events --sort-by='{.lastTimestamp}' --watch
+```
+
+### Trobuleshoot 
+```
+# Pods
+kubectl describe pod <pod name>
+kubectl log <
 
 ### Open 'AKS Workloads' portal view from command line
 ```
@@ -56,8 +74,13 @@ kubectl logs runningPodName
 ```
 kubectl exec -it <podname> -n api -- /bin/sh
 kubectl exec -it <podname> -- /bin/bash
-curl http://localhost:<port>/<some url>
 
+# Once inside, call a resource  
+curl http://localhost:<port>/<some url>
+  
+# Execute into a Mongo DB instance
+kubectl exec -it <mongo pod name> -- mongosh "--version"
+  
 docker exec sql /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<password>' -Q "SELECT NAME FROM sys.databases"
 ```
 
