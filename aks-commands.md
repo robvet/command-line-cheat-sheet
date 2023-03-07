@@ -11,6 +11,11 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 az aks install-cli
 ```
 
+### Alias 'kubectl'
+```
+alias k=kubectl
+```
+
 ### Get credentials and clear cache
 ```
 az aks get-credentials -g <resource group> -n <aks cluster> --overwrite-existing
@@ -28,6 +33,11 @@ kubectl get nodes
 
 # Complex query to see each node and its corresponding availability zone
 kubectl get nodes -o custom-columns=NAME:'{.metadata.name}',REGION:'{.metadata.labels.topology\.kubernetes\.io/region}',ZONE:'{metadata.labels.topology\.kubernetes\.io/zone}'
+```
+
+### Kubectl Get and Watch
+```
+k get <pods> -w
 ```
 
 ### Trobuleshoot 
