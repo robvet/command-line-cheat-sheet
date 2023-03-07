@@ -125,7 +125,27 @@ az aks check-acr -g <resource group> -n <AKS Cluster Name> --acr <ACR Name>
 $ az aks update -g <resource group> -n <AKS Cluster Name> --detach-acr <ACR Name>
 ```
 
+### Rolling Upgrade
+```
+# if pulling from Docker Hub
+kubectl set image deployment/content-web content-web=whatthehackmsft/content-web:v2
 
+// if pulling from ACR
+kubectl set image deployment/content-web content-web=<ACR Server Name>.io/wthaks/content-web:v2.1!
+```
+
+### Rollback - Undo a Rollout
+```
+# get the recent deployments
+kubectl rollout history deploy
+
+# Rollback specific deployment
+kubectl rollout undo deployment.apps/content-web
+
+# Rollback to specific version
+kubectl rollout undo deployment.apps/content-web --to-revision=2
+```
+  
 ### Explore k8s context
 ```
 # Use multiple kubeconfig files at the same time and view merged config
