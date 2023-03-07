@@ -15,6 +15,12 @@ az aks install-cli
 ```
 az aks get-credentials -g <resource group> -n <aks cluster> --overwrite-existing
 ```
+
+### Invoke ClusterInfo Kubernetes Tool
+```
+# OUTSTANDING Kuberentes Visual Tool by Mark Kiznerman: https://github.com/scubakiz/clusterinfo
+kubectl port-forward svc/clusterinfo 5252:5252 -n clusterinfo
+```
 ### Query the cluster nodes
 ```
 # Show nodes, but not the availability zones (if provisioned)
