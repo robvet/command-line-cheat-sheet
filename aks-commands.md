@@ -13,7 +13,7 @@ az aks install-cli
 
 ### Alias 'kubectl'
 ```
-alias k=kubectl
+alias k='kubectl'
 ```
 
 ### Get credentials and clear cache
