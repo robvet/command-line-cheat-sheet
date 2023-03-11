@@ -9,3 +9,12 @@ rm -r <directory name>
 ```
 sudi netstat -at | less
 ```
+
+## Change volumes from Bash command line
+```
+# Change to F: drive
+cd /f/
+
+#Query volumes
+cd /volumes
+```
