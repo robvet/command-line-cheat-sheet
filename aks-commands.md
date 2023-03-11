@@ -40,6 +40,18 @@ kubectl get nodes -o custom-columns=NAME:'{.metadata.name}',REGION:'{.metadata.l
 k get <pods> -w
 ```
 
+### Stop Cluster 
+```
+# Stop cluster
+az aks stop --name myAKSCluster --resource-group myResourceGroup
+
+# Query state of cluster
+az aks show --name myAKSCluster --resource-group myResourceGroup
+
+# Start cluster
+az aks start --name myAKSCluster --resource-group myResourceGroup
+```
+
 ### Trobuleshoot 
 ```
 # Pods
