@@ -1,4 +1,4 @@
-# AZ ACR CLI Command Line Cheat-Sheet
+# AZ Azure Container Registry CLI Command Line Cheat-Sheet
 
 Quick reference for common AZ ACR CLI Commands
 
