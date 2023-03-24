@@ -57,28 +57,3 @@ az group list --output table
 ```
 az group delete --name myResourceGroup
 ```
-
-## ACR
-
-### Authenticate to Azure Container Registry
-```
-// Docker Desktop must be running
-az acr login -n <registry name>
-```
-
-### Build Image and Push to ACR (ACR Tasks)
-```
-az acr build --registry <container_registry_name> --image webimage .
-```
-
-### Import Image from One Subscription to Another
-```
-az acr login -n <destination ACR>
-
-az acr import \
-  --name <destinationRegistry> \
-  --source <sourceRegistry>.azurecr.io/<Image:Tag> \
-  --username <SourceRegistryUsername> \
-  --password <SourceRegistryPassword>
-```
-
