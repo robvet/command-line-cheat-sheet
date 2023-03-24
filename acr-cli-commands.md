@@ -12,7 +12,7 @@ az acr login -n <registry name>
 
 ### Build Image and Push to ACR (ACR Tasks)
 ```
-az acr build --registry <container_registry_name> --image webimage .
+az acr build --registry <container_registry_name> --image <name the image>:<provide tag> .
 ```
 
 ### Import Image from One Subscription to Another
