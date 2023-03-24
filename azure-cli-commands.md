@@ -42,7 +42,8 @@ azure --version
 
 ### Get help
 ```
-azure help
+azure --help 
+azure <command> --help
 ```
 ### Create a Resource group
 ```
