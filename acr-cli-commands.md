@@ -13,6 +13,9 @@ az acr login -n <registry name>
 ### Build Image and Push to ACR (ACR Tasks)
 ```
 az acr build --registry <container_registry_name> --image <name the image>:<provide tag> .
+
+// Docker file in different sub-directory
+az acr build --image <image name>:<tag> --registry <registry name> --file src/Services/Catalog.Service/dockerfile .
 ```
 
 ### Import Image from One Subscription to Another
