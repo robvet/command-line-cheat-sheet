@@ -7,13 +7,9 @@ Quick reference for common AZ ACI and Docker Commands
 ### Login with web (interactively)
 ```
 az login
-```
-
-### Login in CLI (username)
-```
 az login -u myemail@address.com
+az login -t <name of AAD tenant>
 ```
-
 ### List accounts
 ```
 az account list --output table
