@@ -15,7 +15,12 @@ az acr login -n <registry name>
 az acr build --registry <container_registry_name> --image <name the image>:<provide tag> .
 
 // Docker file in different sub-directory
-az acr build --image <image name>:<tag> --registry <registry name> --file src/Services/Catalog.Service/dockerfile .
+az acr build --image <image name>:<tag> --registry <registry name> .
+
+// Pushing from Visual Studio with VS-generated Dockerfile
+// start at folder immediately above the referenced folders in the Docker file
+// Note usage for file argument where Dockerfile in different directory than from where command launched
+az acr build --image catalog-service:v1 --registry <acr name> --file Services/Catalog.Service/dockerfile .
 ```
 
 ### Import Image from One Subscription to Another
