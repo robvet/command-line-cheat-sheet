@@ -16,6 +16,11 @@ az aks install-cli
 alias k='kubectl'
 ```
 
+### Kubectl Get All Kubernetes Objects in a Namespace
+```
+k get all -n <optional namespace name>
+```
+
 ### Get credentials and clear cache
 ```
 az aks get-credentials -g <resource group> -n <aks cluster> --overwrite-existing
