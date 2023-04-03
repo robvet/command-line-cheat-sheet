@@ -1,6 +1,6 @@
 # AZ Command Line Cheat-Sheet
 
-Quick reference for common AZ ACI and Docker Commands
+Quick reference for common AZ ACI Account Management
 
 ## AZ CLI - Login/Account
 
