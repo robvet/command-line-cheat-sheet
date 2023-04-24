@@ -84,21 +84,20 @@ az aks nodepool scale -g <Resource Group name> --cluster-name <AKS Cluster name>
 kubectl get events --sort-by='{.lastTimestamp}' --watch
 ```
 
-### Trobuleshoot 
+### Port-Forward
 ```
-# Pods
-kubectl describe pod <pod name>
-kubectl log <
+# Debug a non-public Kubernetes service with Port-Forward
+# The command opens up a channel to communicate temporarily with a private service. 
+kubectl port-foward <running POD name> <host port>:<container port>
+
+# Leave <host port> empty and the command will create a host port for you. Avoid port conflicts.
+kubectl port-forward customer-pod-998987222  :80
+```
 
 ### Open 'AKS Workloads' portal view from command line
 ```
 // Opens AKS portal in web browser
 aks browse --name <AKS Cluster Name> --resource-group <Resource Group Name>
-```
-
-### Port-forward -- Invoke POD with a private clusterIP address
-```
-kubectl port-forward <running POD> 8080:8080   # <host port>:<container port>
 ```
 
 ### Get events from troubleshooting
@@ -111,8 +110,11 @@ kubectl logs runningPodName
 
 ### Execute a command inside a running container
 ```
+# Execute single command inside running container
+kubectl exec <podname> -- /bin/bash <command>
+
+# Open up a command console inside running container
 kubectl exec -it <podname> -n api -- /bin/sh
-kubectl exec -it <podname> -- /bin/bash
 
 # Once inside, call a resource  
 curl http://localhost:<port>/<some url>
