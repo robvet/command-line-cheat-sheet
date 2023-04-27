@@ -21,7 +21,7 @@ alias k='kubectl'
 k get all -n <optional namespace name>
 ```
 
-### Get credentials with Admin ecalation
+### Get credentials with Admin escalation
 ```
 az aks get-credentials -g <resource group> -n <aks cluster> --admin
 ```
