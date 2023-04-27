@@ -10,6 +10,10 @@ az login
 az login -u myemail@address.com
 az login -t <name of AAD tenant>
 ```
+### Show current AAD User
+```
+az ad signed-in-user
+```
 ### List accounts
 ```
 az account list --output table
