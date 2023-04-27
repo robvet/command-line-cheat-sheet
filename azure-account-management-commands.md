@@ -12,7 +12,7 @@ az login -t <name of AAD tenant>
 ```
 ### Show current AAD User
 ```
-az ad signed-in-user
+az ad signed-in-user show
 ```
 ### List accounts
 ```
