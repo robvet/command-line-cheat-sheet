@@ -13,12 +13,14 @@ az containerapp exec -n MyContainerapp -g MyResourceGroup --command bash
 # exec into runing app
 az containerapp exec -n MyContainerapp -g MyResourceGroup
 
-### exec into a particular container app replica and revision
-```
+##exec into a particular container app replica and revision
+
 az containerapp exec -n MyContainerapp -g MyResourceGroup --replica MyReplica --revision MyRevision
 
-### disable a container app
+### Disable a container app
 ```
+# disable
 az containerapp revision deactivate -g <resourceGroup> --revision <containerAppRevision>
+
 # reactivate (enable) disabled container app
 az containerapp revision activate -g <resourceGroup> --revision <containerAppRevision>
