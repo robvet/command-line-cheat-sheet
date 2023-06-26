@@ -17,7 +17,7 @@ az containerapp exec -n MyContainerapp -g MyResourceGroup
 az containerapp exec -n MyContainerapp -g MyResourceGroup --replica MyReplica --revision MyRevision
 ```
 
-### Disable a container app
+### Disable container app
 ```
 # disable
 az containerapp revision deactivate -g <resourceGroup> --revision <containerAppRevision>
