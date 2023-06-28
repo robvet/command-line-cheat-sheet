@@ -4,7 +4,6 @@
 
 ### Check Status of Redis Cache
 ```
-az login
 Stats
 Keyspace
 ```
