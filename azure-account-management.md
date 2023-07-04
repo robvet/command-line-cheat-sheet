@@ -8,7 +8,7 @@ Quick reference for common AZ ACI Account Management
 ```
 az login
 az login -u myemail@address.com
-az login -t <name of AAD tenant>
+az login -t <AAD tenant Id>
 ```
 ### Show current AAD User
 ```
