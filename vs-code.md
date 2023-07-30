@@ -25,5 +25,5 @@ dotnet -f net6.0
 ## Create new .net app
 https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0
 ```
-dotnet new console --framework <version, such as 'net7.0'>
+dotnet new console --framework <version, such as: net7.0>
 ```
