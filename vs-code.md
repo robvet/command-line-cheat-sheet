@@ -27,3 +27,8 @@ https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?
 ```
 dotnet new console --framework <version, such as: net7.0>
 ```
+
+## Add use secrets
+```
+dotnet user-secrets set "<key>" "<value>"
+```
