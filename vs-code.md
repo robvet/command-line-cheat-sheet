@@ -5,6 +5,11 @@
 code .
 ```
 
+##  Open VS code from command line in current directory -r option opens the folder without launching a new Visual Studio Code window
+```
+code . -r
+```
+
 ## Reopen VS Code from current directory
 ```
 code -r .
