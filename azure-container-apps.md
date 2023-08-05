@@ -5,6 +5,17 @@
 https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest
 ```
 
+### Install the Azure Container Apps extension for the CLI
+```
+az extension add --name containerapp --upgrade
+```
+
+### Register the Microsoft.App namespace
+```
+az provider register --namespace Microsoft.App
+```
+
+
 ### Open SSH shell into running container app 
 ```
 # exec into runing app with bash shell
