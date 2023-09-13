@@ -18,3 +18,8 @@ cd /f/
 #Query volumes
 cd /volumes
 ```
+## Unpack Tar file
+```
+# Unpack
+tar -xvf file.tar
+```
