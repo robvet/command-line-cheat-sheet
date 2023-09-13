@@ -21,5 +21,5 @@ cd /volumes
 ## Unpack Tar file
 ```
 # Unpack
-tar -xvf file.tar
+tar -xvf <filename.tar>
 ```
