@@ -34,3 +34,11 @@ git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spaceg
 git fetch upstream <branch name> # fetch remote branch
 git checkout -B <branch name> upstream/<bracnh name> # create local branch for models-pacakge
 ```
+
+## Remove untracked directories
+```
+# To remove untracked files
+git clean -f
+# TO remove untracked directories
+git clean -fd
+```
