@@ -39,6 +39,16 @@ az resource list
 ```
 azure --version
 ```
+### Create global.json file
+```
+dotnet new globaljson --sdk-version 7.0.401
+```
+### Global.json file
+{
+    "sdk": {
+      "version": "7.0.401"
+    }
+}
 
 ### Get help
 ```
