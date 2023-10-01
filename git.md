@@ -28,12 +28,23 @@ git remote -v # Lists remote repos
 git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git # Add remote repo, in this case, upstream
 ```
 
-## Fetch branch from upstram repo
+## Fetch branch from upstream repo
 ```
 # Applicable to fetch a branch when forked to upstream repo
 git fetch upstream <branch name> # fetch remote branch
 git checkout -B <branch name> upstream/<bracnh name> # create local branch for models-pacakge
 ```
+
+## Clone branch
+```
+# Clone main and then view branches
+git branch -a
+# Pick the target branch and input following command
+git clone --branch <branchname> <remote-repo-url>
+# Reference link
+https://www.freecodecamp.org/news/git-clone-branch-how-to-clone-a-specific-branch/
+```
+
 
 ## Remove untracked directories
 ```
