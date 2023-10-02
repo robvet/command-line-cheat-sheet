@@ -28,6 +28,19 @@ git remote -v # Lists remote repos
 git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git # Add remote repo, in this case, upstream
 ```
 
+## Delete Branch
+```
+# Delete local branch
+git branch -d  local_branch_name
+# Delete local branch with unmerged changes - D is alias Delete Force
+git branch -D local_branch_name
+# Delete remote branch
+git push remote_name -d remote_branch_name>
+git push origin -d test
+# Reference
+https://www.freecodecamp.org/news/git-delete-branch-how-to-remove-a-local-or-remote-branch/
+```
+
 ## Fetch branch from upstream repo
 ```
 # Applicable to fetch a branch when forked to upstream repo
