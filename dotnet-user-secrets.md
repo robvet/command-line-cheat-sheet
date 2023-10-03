@@ -1,25 +1,11 @@
-# Azure Redis Cache Command Line Cheat-Sheet
+# dotnet user secrets
 
-## Redis Console Command Line
-
-### Search Key/Vaule Pairs
+## Add Library
 ```
-Keys *
-Scan 0 count 1000 Match *
+dotnet add package Microsoft.Extensions.Configuration.UserSecrets
 ```
 
-### Check Status of Redis Cache
+## Add Secrets
 ```
-Info
-```
-
-### Check Status of Redis Cache
-###### Azure Cache for Redis uses the db0 database by default. If you switch to another database (for example, db1) and try to read keys from it, Azure Cache for Redis won't find them there. Every database is a logically separate unit and holds a different dataset.
-```
-select <database number - zero based>
-```
-
-### Blah
-```
-Blah
+dotnet user-secrets set "OPENAI_APIKEY" "<your OpenAI API key>"
 ```
