@@ -21,7 +21,7 @@ dotnet new globaljson --sdk-version 7.0.401
 }
 ```
 
-## dotnet user secrets
+## User Secrets
 
 ### Add Library
 ```
