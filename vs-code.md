@@ -4,6 +4,12 @@
 ```
 code .
 ```
+## Open VS code insiders edition from command line in current directory
+```
+code-i .
+code-insiders .
+```
+
 
 ##  Open VS code from command line in current directory -r option opens the folder without launching a new Visual Studio Code window
 ```
