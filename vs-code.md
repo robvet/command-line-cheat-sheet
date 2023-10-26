@@ -43,7 +43,7 @@ dotnet new console --framework <version, such as: net7.0>C:\_vet\_vetDemos\_comp
 dotnet user-secrets set "<key>" "<value>"
 ```
 
-## Open the search bar at the top of the editor
+## VSC keyboard shortcuts
 ```
 # Open the search bar at the top of the editor
 <command> <P>
