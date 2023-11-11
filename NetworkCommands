@@ -1,1 +1,6 @@
+# Network Commands
 
+### Determine the device state 
+```
+dsregcmd /status
+```
