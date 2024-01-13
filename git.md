@@ -9,6 +9,12 @@ git branch -M main
 git remote add origin https://github.com/robvet/test.git
 git push -u origin mainaz login
 ```
+## Backtracking to the GitHub repo from which you cloned code
+```
+# Situation: Cloned code onto my laptop, but want to get to the original GitHub Repo
+git remote get-url origin # Get back to the cloned repo
+git remote get-url upstream # Get gack to the forked repo
+```
 
 ## Push existing repository
 ```
