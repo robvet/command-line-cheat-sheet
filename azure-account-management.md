@@ -2,6 +2,12 @@
 
 Quick reference for common AZ ACI Account Management
 
+## AZ CLI - Tenant Commands
+### Login into an Azure Tenant
+```
+az login --tenant "<tenant id>?"
+```
+
 ## AZ CLI - Login/Account
 
 ### Login with web (interactively)
