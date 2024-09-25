@@ -7,9 +7,18 @@
 .\.venv\Scripts\activate
 ```
 
-### Blah
+### Show Conda (non-venv) Environments
 ```
-Blah command
+conda env list
 ```
 
+### Show Conda (non-venv) Environments
+```
+conda env list
+```
+
+### Show Current Environment
+```
+conda info --envs
+```
 ### SOmething Ese
