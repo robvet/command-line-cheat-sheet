@@ -36,3 +36,8 @@ az containerapp revision deactivate -g <resourceGroup> --revision <containerAppR
 # reactivate (enable) disabled container app
 az containerapp revision activate -g <resourceGroup> --revision <containerAppRevision>
 ```
+
+### Change Environment Variable value
+```
+az containerapp update --name ca-web-ragapp --resource-group rg-blah --set-env-vars AZURE_SEARCH_INDEX=desginwins
+```
