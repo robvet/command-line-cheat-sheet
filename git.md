@@ -1,5 +1,14 @@
 # Git Hub Command Line Cheat-Sheet
 
+## View Branches
+```
+# View branches that exist in your local repository
+git branch
+
+# View all branches, including remote branches
+git branch -a
+```
+
 ## Create new repository
 ```
 git init
@@ -9,6 +18,7 @@ git branch -M main
 git remote add origin https://github.com/robvet/test.git
 git push -u origin main --force
 ```
+
 ## Backtracking to the GitHub repo from which you cloned code
 ```
 # Situation: Cloned code onto my laptop, but want to get to the original GitHub Repo
