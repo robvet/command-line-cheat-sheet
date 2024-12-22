@@ -7,18 +7,18 @@
 .\.venv\Scripts\activate
 ```
 
+### Reinstall depdendcies to ensure consistency
+```
+pip install --force-reinstall -r requirements.txt
+```
+Start Fastapi 
+```
+uvicorn main:app --reload
+```
+
 ### Show Conda (non-venv) Environments
+
 ```
 conda env list
 ```
 
-### Show Conda (non-venv) Environments
-```
-conda env list
-```
-
-### Show Current Environment
-```
-conda info --envs
-```
-### SOmething Ese
