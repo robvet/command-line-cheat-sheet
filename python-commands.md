@@ -29,7 +29,9 @@ pipdeptree
 
 ### Reinstall depdendcies to ensure consistency
 ```
-
+# Unintall depedencies
+# Clear cahced pacakges to ensure you're installing new packages
+pip cache purge
 ```
 ### Start Fastapi 
 ```
