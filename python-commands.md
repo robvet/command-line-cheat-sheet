@@ -19,6 +19,14 @@ pip list
 pip list | grep -E 'fastapi|uvicorn'
 ```
 
+### Display packages in tree format with dependencies
+```
+pipdeptree
+```
+
+
+
+
 ### Reinstall depdendcies to ensure consistency
 ```
 
