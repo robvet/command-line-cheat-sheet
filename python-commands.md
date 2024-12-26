@@ -32,6 +32,9 @@ pipdeptree
 # Unintall depedencies
 # Clear cahced pacakges to ensure you're installing new packages
 pip cache purge
+# Freeze to generate a new list of currently installed packages with thier versions
+# this will overwirte the old file
+pip freeze > requirements.txt
 ```
 ### Start Fastapi 
 ```
