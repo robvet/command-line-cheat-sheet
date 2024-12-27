@@ -24,10 +24,12 @@ pip list | grep -E 'fastapi|uvicorn'
 pipdeptree
 ```
 
+### Associate venv with app
+```
+python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
+```
 
-
-
-### Reinstall depdendcies to ensure consistency
+### Reinstall dependencies to ensure consistency
 ```
 # Unintall depedencies
 # Clear cahced pacakges to ensure you're installing new packages
