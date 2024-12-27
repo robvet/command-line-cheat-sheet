@@ -29,6 +29,13 @@ pipdeptree
 python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
 ```
 
+### FastAPI: Check if port 8000 (default port) is free
+```
+netstat -ano | findstr :8000
+#Kill process if necessary
+taskkill /PID <PID> /F
+```
+
 ### Reinstall dependencies to ensure consistency
 ```
 # Unintall depedencies
