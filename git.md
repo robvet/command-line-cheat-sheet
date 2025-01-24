@@ -74,6 +74,9 @@ git clone --branch <branchname> <remote-repo-url>
 https://www.freecodecamp.org/news/git-clone-branch-how-to-clone-a-specific-branch/
 ```
 
+## Stop Tracking a folder or file
+git rm -r --cached TestData
+
 
 ## Remove untracked directories
 ```
