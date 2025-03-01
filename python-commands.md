@@ -19,7 +19,7 @@ python -m venv .venv<projectname>
 pip install ipykernel
 
 # Install a new Kernel
-ipython kernel install --user --name=projectname
+ipython kernel install --user --name=.venv<projectname>
 
 # Start Juypter
 VS Code
