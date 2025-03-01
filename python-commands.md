@@ -7,7 +7,7 @@
 .\.venv\Scripts\activate
 ```
 
-### Create Notebool
+### Create Notebook
 ```
 # Create new virtual environment
 python -m venv .venv<projectname>
