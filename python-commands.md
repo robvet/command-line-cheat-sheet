@@ -7,6 +7,34 @@
 .\.venv\Scripts\activate
 ```
 
+### Create Notebool
+```
+# Create new virtual environment
+python -m venv .venv<projectname>
+
+# Activate it
+.\.venv\Scripts\activate
+
+# Install ipykernel using PIP
+pip install ipykernel
+
+# Install a new Kernel
+ipython kernel install --user --name=projectname
+
+# Start Juypter
+VS Code
+Set Environment
+
+# Install pacakges
+pip install -r requirements.txt
+
+```
+
+### Associate venv with app
+```
+python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
+```
+
 ### Packages
 ```
 # install packages
@@ -22,11 +50,6 @@ pip list | grep -E 'fastapi|uvicorn'
 ### Display packages in tree format with dependencies
 ```
 pipdeptree
-```
-
-### Associate venv with app
-```
-python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
 ```
 
 ### FastAPI: Check if port 8000 (default port) is free
