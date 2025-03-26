@@ -7,9 +7,6 @@
 .\.venv\Scripts\activate
 ```
 
-
-pip install -r requirements.txt
-
 ### New Virutal Environment
 ```
 # Create new virtual environment
