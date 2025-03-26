@@ -7,6 +7,23 @@
 .\.venv\Scripts\activate
 ```
 
+
+pip install -r requirements.txt
+
+### New Virutal Environment
+```
+# Create new virtual environment
+python -m venv .venv<projectname>
+
+# Activate virtual environment
+.\.venv\Scripts\activate
+
+# Install packages from requirements.txt
+pip install -r requirements.txt
+
+```
+
+
 ### Create Notebook
 ```
 # Create new virtual environment
