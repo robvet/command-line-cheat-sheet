@@ -12,7 +12,7 @@ az extension add --name containerapp --upgrade
 
 ### Register the Microsoft.App namespace
 ```
-az provider register --namespace Microsoft.App
+az containerapp update --name ca-web-xxx  --resource-group rg-xxx --set tags.forceRestart=$(Get-Date -Format o)
 ```
 
 
@@ -34,6 +34,11 @@ az containerapp exec -n MyContainerapp -g MyResourceGroup --replica MyReplica --
 az containerapp revision deactivate -g <resourceGroup> --revision <containerAppRevision>
 
 # reactivate (enable) disabled container app
+az containerapp revision activate -g <resourceGroup> --revision <containerAppRevision>
+```
+
+### Restart container app
+```
 az containerapp revision activate -g <resourceGroup> --revision <containerAppRevision>
 ```
 
