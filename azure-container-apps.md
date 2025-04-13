@@ -15,6 +15,10 @@ az extension add --name containerapp --upgrade
 az containerapp update --name ca-web-xxx  --resource-group rg-xxx --set tags.forceRestart=$(Get-Date -Format o)
 ```
 
+### Fetch ALL environmental vars
+```
+az containerapp show --name ca-web-ragxxx --resource-group xxx  --query "properties.template.containers[0].env"
+```
 
 ### Open SSH shell into running container app 
 ```
