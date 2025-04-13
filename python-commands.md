@@ -14,8 +14,10 @@ python -m venv .venv<projectname>
 
 # Activate virtual environment
 .\.venv\Scripts\activate
+
 or...
 source .venv/Scripts/activate
+
 or...
 . .venv/Scripts/activate
 
