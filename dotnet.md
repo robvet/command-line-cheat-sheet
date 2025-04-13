@@ -8,6 +8,17 @@ Quick reference for common Dotnet stuff
 ```
 azure --version
 ```
+### Show Installed .NET Runtimes
+```
+dotnet --list-runtimes
+```
+
+### Show Installed .NET SDKs
+```
+dotnet --list-sdks
+```
+
+
 ### Create global.json file
 ```
 dotnet new globaljson --sdk-version 7.0.401
