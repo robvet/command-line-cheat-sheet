@@ -43,7 +43,7 @@ az containerapp revision activate -g <resourceGroup> --revision <containerAppRev
 
 ### Restart container app
 ```
-az containerapp revision restart --name ca-web-ragapp --resource-group <your-resource-group-name>
+az containerapp update --name ca-web-xxxx  --resource-group rg-xxxx --set tags.forceRestart=$(date -Iseconds)
 ```
 
 ### Change Environment Variable value
