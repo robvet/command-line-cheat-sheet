@@ -4,6 +4,10 @@
 
 ### Actviate Environment
 ```
+# from PowerShell
+.venv\Scripts\activate.ps1
+
+# Other
 .\.venv\Scripts\activate
 ```
 
