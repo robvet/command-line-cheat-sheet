@@ -79,6 +79,11 @@ pip list | grep -E 'fastapi|uvicorn'
 pipdeptree
 ```
 
+### OBtain deeper diagnostic for a packge
+```
+python -X importtime -c "import <package name>"
+```
+
 ### FastAPI: Check if port 8000 (default port) is free
 ```
 netstat -ano | findstr :8000
