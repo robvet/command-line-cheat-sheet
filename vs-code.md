@@ -20,6 +20,11 @@ code . -r
 code -r .
 ```
 
+## Kill all processes in VS Code
+```
+taskkill /F /IM dotnet.execode -r .
+```
+
 ## Add Packages
 https://bobbyhadz.com/blog/vscode-install-nuget-package
 ```
