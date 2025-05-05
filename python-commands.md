@@ -61,6 +61,9 @@ python -m ipykernel install --user --name=obv-env --display-name "Python (obv-en
 
 ### Packages
 ```
+# Install pacakges
+pip install -r requirements.txt
+
 # install packages
 pip install --force-reinstall -r requirements.txt
 
