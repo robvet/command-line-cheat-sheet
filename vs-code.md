@@ -69,3 +69,52 @@ dotnet user-secrets set "<key>" "<value>"
 <command> <tab>
 
 ```
+
+## VSCode IDE Color and Size Settings
+```
+# settings.json
+{
+    "@azure.argTenant": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "text": "- @azure Rule - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available."
+        }
+    ],
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.fontSize": 18,
+    "terminal.integrated.mouseWheelZoom": true,
+    "terminal.integrated.fontSize": 30,
+    "workbench.colorCustomizations": {
+        "editor.background": "#002b00", // "#06402B" // Change this hex code to your preferred dark green
+        "sideBar.background": "#001a00",
+        "activityBar.background": "#001a00",
+        "titleBar.activeBackground": "#001a00",
+
+        // Tab Customizations
+        "tab.activeBackground": "#003300",
+        "tab.inactiveBackground": "#001a00",
+        "tab.activeForeground": "#ffffff",
+        "tab.inactiveForeground": "#cccccc",
+        "tab.border": "#004400",
+
+        // Scrollbar Customizations
+        "scrollbarSlider.background": "#b5890099",
+        "scrollbarSlider.hoverBackground": "#b58900cc",
+        "scrollbarSlider.activeBackground": "#b58900ff"
+
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "chat.editor.fontSize": 18,
+    "editor.codeLensFontSize": 18
+}
+```
+
+
+
+
+
+
+
+
+
+
