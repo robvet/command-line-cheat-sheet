@@ -74,38 +74,55 @@ dotnet user-secrets set "<key>" "<value>"
 ```
 # settings.json
 {
+     // Microsoft tenant ID for Azure Resource Graph access
     "@azure.argTenant": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    
+    // Custom instructions for GitHub Copilot to follow Azure best practices
     "github.copilot.chat.codeGeneration.instructions": [
         {
             "text": "- @azure Rule - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available."
         }
     ],
-    "workbench.colorTheme": "Visual Studio Dark",
-    "editor.fontSize": 18,
+    
+    "files.autoSaveWhenNoErrors":true,
+
+    // Sets the color theme to Kelp Forest, a green-themed VS Code color scheme
+    "workbench.colorTheme": "Kelp Forest",
+    // Link to the theme's documentation
+    // https://jasontheiler.github.io/kelp-forest-theme-vscode/
+    
+    // Sets the font size for code in the editor to 8 pixels (quite small)
+    "editor.fontSize": 16,
+    
+    // Enables zooming in the terminal using Ctrl + mouse wheel
     "terminal.integrated.mouseWheelZoom": true,
-    "terminal.integrated.fontSize": 30,
-    "workbench.colorCustomizations": {
-        "editor.background": "#002b00", // "#06402B" // Change this hex code to your preferred dark green
-        "sideBar.background": "#001a00",
-        "activityBar.background": "#001a00",
-        "titleBar.activeBackground": "#001a00",
+    
+    // Enables zooming in the main editor using Ctrl + mouse wheel
+    "editor.mouseWheelZoom": true,
+    
+    // Sets the font size in the chat interface (Copilot) to 10 pixels
+    "chat.editor.fontSize": 14,
+    
+    // Sets the font size for CodeLens annotations to 10 pixels
+    "editor.codeLensFontSize": 14,
+    
+    // Sets the overall zoom level of the entire VS Code window to 2 (enlarged)
+    "window.zoomLevel": 2,
+    
+    // Sets the title bar style to custom (VS Code manages the window controls)
+    "window.titleBarStyle": "custom",
 
-        // Tab Customizations
-        "tab.activeBackground": "#003300",
-        "tab.inactiveBackground": "#001a00",
-        "tab.activeForeground": "#ffffff",
-        "tab.inactiveForeground": "#cccccc",
-        "tab.border": "#004400",
+    // Enable mouse wheel zoom for the debug console and output panels
+    "debug.console.fontSize": 14,
+    "output.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.2,
+    
 
-        // Scrollbar Customizations
-        "scrollbarSlider.background": "#b5890099",
-        "scrollbarSlider.hoverBackground": "#b58900cc",
-        "scrollbarSlider.activeBackground": "#b58900ff"
+    "key": "ctrl+numpad_add",
+    "command": "workbench.action.terminal.increaseFont",
+    "when": "terminalFocus"
 
-    },
-    "git.openRepositoryInParentFolders": "never",
-    "chat.editor.fontSize": 18,
-    "editor.codeLensFontSize": 18
 }
 ```
 
