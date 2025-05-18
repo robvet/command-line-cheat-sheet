@@ -26,8 +26,13 @@ dotnet new globaljson --sdk-version 7.0.401
 ### Global.json file
 ```json
 {
+   {
     "sdk": {
-      "version": "7.0.401"
+        "version": "8.0.409",
+        "rollForward": "latestFeature"
+    },
+    "msbuild-sdks": {
+        "Microsoft.NET.Sdk": "8.0.14"
     }
 }
 ```
