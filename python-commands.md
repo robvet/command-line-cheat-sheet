@@ -78,6 +78,10 @@ pip list
 
 # find version of packages:
 pip list | grep -E 'fastapi|uvicorn'
+
+# Query for released versions of Python packages
+pip index version <name of package>
+
 ```
 
 ### Display packages in tree format with dependencies
