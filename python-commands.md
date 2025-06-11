@@ -16,6 +16,9 @@
 # Create new virtual environment
 python -m venv .venv<projectname>
 
+# Note: The virtual environment (.venv) will be created using the Python interpreter referenced by the python command.
+# If 'python --version' shows 3.13.4, then .venv will use Python 3.13.4 automatically.
+
 # Activate virtual environment
 .\.venv\Scripts\activate
 
