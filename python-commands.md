@@ -62,6 +62,14 @@ pip install -r requirements.txt
 python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
 ```
 
+### Python Versions
+```
+# Determine if and what version of a Python runtime is installed
+python -<version> --version
+# Example:
+py -3.12 --version  
+```
+
 ### Packages
 ```
 # Install pacakges
@@ -89,7 +97,7 @@ pip index version <name of package>
 pipdeptree
 ```
 
-### OBtain deeper diagnostic for a packge
+### Obtain deeper diagnostic for a packge
 ```
 python -X importtime -c "import <package name>"
 ```
