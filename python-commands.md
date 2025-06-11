@@ -11,7 +11,7 @@
 .\.venv\Scripts\activate
 ```
 
-### New Virutal Environment
+### Python Virutal Environments
 ```
 # Create new virtual environment
 python -m venv .venv<projectname>
