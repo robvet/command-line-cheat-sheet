@@ -11,5 +11,7 @@ netstat -ano | findstr :5000
 
 # Locked by specific process
 taskkill /F /PID 18236
+
+taskkill /F /IM dotnet.exe
 ```
 
