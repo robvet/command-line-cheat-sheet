@@ -22,10 +22,6 @@ dotnet --list-sdks
 dotnet run --project airline-complaint-system.csproj
 ```
 
-
-
-
-
 ### Create global.json file
 ```
 dotnet new globaljson --sdk-version 7.0.401
