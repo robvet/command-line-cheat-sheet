@@ -17,3 +17,7 @@ taskkill /F /PID 18236
 taskkill /F /IM dotnet.exe
 ```
 
+### Kill Everything
+```
+taskkill /F /IM dotnet.exe 2>nul & taskkill /F /IM airline-complaint-system.exe 2>nul
+```
