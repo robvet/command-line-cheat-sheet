@@ -17,6 +17,13 @@ dotnet --list-runtimes
 ```
 dotnet --list-sdks
 ```
+### Start project
+```
+dotnet run --project airline-complaint-system.csproj
+```
+
+
+
 
 
 ### Create global.json file
