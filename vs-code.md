@@ -70,6 +70,64 @@ dotnet user-secrets set "<key>" "<value>"
 
 ```
 
+## launch.json - Python
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug FastAPI Backend",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "api:app",
+        "--reload",
+        "--host", "0.0.0.0",
+        "--port", "8000"
+      ],
+      "cwd": "${workspaceFolder}/python-backend",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/python-backend"
+      },
+      "python": "${workspaceFolder}/python-backend/.venv/Scripts/python.exe"
+    }
+  ]
+}
+
+
+
+```
+
+## launch.json - C#
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Airline Complaint System",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net8.0/airline-complaint-system.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5000;https://localhost:5001"
+            }
+        }
+    ]
+}
+
+```
+
+
+
+
+
 ## VSCode IDE Color and Size Settings
 ```
 # settings.json
