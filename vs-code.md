@@ -25,6 +25,14 @@ code -r .
 taskkill /F /IM dotnet.execode -r .
 ```
 
+## Missing OmniSense in VS Code
+1) Got to Command Pallette
+2) Type C#
+3) Select C# Startup Project
+```
+dotnet add package <package fully qualified name> --version <version number>
+```
+
 ## Add Packages
 https://bobbyhadz.com/blog/vscode-install-nuget-package
 ```
