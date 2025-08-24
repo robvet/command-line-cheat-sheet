@@ -109,6 +109,11 @@ pip index version <name of package>
 pipdeptree
 ```
 
+### Uninstall packages, venv or python fodler
+```
+pip uninstall <mkdocs mkdocs-material> <package name>
+```
+
 ### Obtain deeper diagnostic for a packge
 ```
 python -X importtime -c "import <package name>"
