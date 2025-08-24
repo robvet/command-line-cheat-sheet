@@ -2,13 +2,16 @@
 
 ## Environments
 
-### Actviate Environment
+### Actviate\Deactivate Environment
 ```
 # from PowerShell
 .venv\Scripts\activate.ps1
 
 # Other
 .\.venv\Scripts\activate
+
+# Deactivate
+deactivate
 ```
 
 ### Python Virutal Environments
@@ -23,13 +26,12 @@ python -3.12 -m venv .venv
 # If 'python --version' shows 3.13.4, then .venv will use Python 3.13.4 automatically.
 
 # Activate virtual environment
+# Windows
 .\.venv\Scripts\activate
 
-or...
+# Linux/MacOS
+source venv/bin/activate
 source .venv/Scripts/activate
-
-or...
-. .venv/Scripts/activate
 
 # Install packages from requirements.txt
 pip install -r requirements.txt
