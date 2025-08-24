@@ -86,8 +86,15 @@ pip install --force-reinstall -r requirements.txt
 # Is a package installed
 pip show <package name>
 
-# list all packages
+# list all packages in an environment
 pip list
+
+Check for requirements.txt in project
+# Windows
+
+# Linux
+cat requirements.txt
+type requirements.txt
 
 # find version of packages:
 pip list | grep -E 'fastapi|uvicorn'
