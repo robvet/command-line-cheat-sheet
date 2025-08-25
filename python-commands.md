@@ -61,7 +61,6 @@ Set Environment
 pip install -r requirements.txt
 
 ```
-
 ### Associate venv with app
 ```
 python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
@@ -73,6 +72,12 @@ python -m ipykernel install --user --name=obv-env --display-name "Python (obv-en
 python -<version> --version
 # Example:
 py -3.12 --version  
+```
+
+### Python and OpenAPI
+```
+# run API and suffix url with \docs
+\docs
 ```
 
 ### Packages
