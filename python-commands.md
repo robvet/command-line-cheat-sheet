@@ -33,6 +33,14 @@ python -3.12 -m venv .venv
 # Windows
 .\.venv\Scripts\activate
 
+# Steps to Change the Python Environment:
+ - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
+ - Search for "Python: Select Interpreter": Begin typing "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
+
+# Deactivate
+deactivate
+
+
 # Linux/MacOS
 source venv/bin/activate
 source .venv/Scripts/activate
