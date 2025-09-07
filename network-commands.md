@@ -25,9 +25,7 @@ dotnet clean airline-complaint-system.csproj
 
 # Restart app
 dotnet run --project airline-complaint-system.csproj
-
-
-
+```
 
 ### Search for unexpected env var
 ```
@@ -39,11 +37,11 @@ echo $env:<name of suspect variable>
 Remove-Item Env:<name of env variable>
 ```
 
-
 ### Get process
 ```
 netstat -ano | findstr :5000
 ```
+
 ### Locked by specific process
 ```
 taskkill /F /PID 18236
