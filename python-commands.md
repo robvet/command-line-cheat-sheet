@@ -30,8 +30,23 @@ python -3.12 -m venv .venv
 # If 'python --version' shows 3.13.4, then .venv will use Python 3.13.4 automatically.
 
 # Activate virtual environment
+
+###You have multiple ways to activate environments:
+ - Method 1: VS Code Python Interpreter
+ - Open new terminal (Ctrl+Shift+`)
+ - Select interpreter 
+Easiest for development
+
+Method 2: Manual activation
 # Windows
 .\.venv\Scripts\activate
+
+# conda
+- conda activate apiweaver (not .venv command - that's different)
+- Useful for command line work outside VS Code
+
+Method 3: Anaconda Prompt
+ - Always works, good fallback
 
 # Steps to Change the Python Environment:
  - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
