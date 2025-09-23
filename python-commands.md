@@ -7,6 +7,9 @@
 # from PowerShell
 .venv\Scripts\activate.ps1
 
+# Linix
+source .venv-mcp-postgres/Scripts/activate
+
 # Other
 .\.venv\Scripts\activate
 
