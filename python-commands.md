@@ -137,6 +137,16 @@ pip list | grep -E 'fastapi|uvicorn'
 # Query for released versions of Python packages
 pip index version <name of package>
 
+# View packages installed in a root python environment (powershell)
+& "C:\Program Files\Python311\python.exe" -m pip list
+
+# Compare packages from root environment to a vitural environment
+# Global environment
+& "C:\Program Files\Python311\python.exe" -m pip list > global.txt
+# Project venv
+.\.venv\Scripts\python.exe -m pip list > venv.txt
+code -d global.txt venv.txt   # opens a side-by-side diff in VS Code
+
 ```
 
 ### Display packages in tree format with dependencies
