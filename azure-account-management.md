@@ -7,7 +7,15 @@ Quick reference for common AZ ACI Account Management
 ```
 az login --tenant "<tenant id>"
 az account show --query tenantId -o tsv
+```
 
+## VS Code
+### Change Identity in VS Code Terminal
+```
+az login
+az account list --output table
+az account set --subscription "<your-subscription-name-or-id>"
+az account show
 ```
 
 ## AZ CLI - Login/Account
@@ -78,3 +86,4 @@ az group list --output table
 ```
 az group delete --name myResourceGroup
 ```
+
