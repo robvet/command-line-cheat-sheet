@@ -1,7 +1,8 @@
 # Python Commands Cheat-Sheet
 
-## Scafold Py Project
+## Scafold Enviroment (VS Code)
 
+### Scafold Python Project from Command Palette
 ```
 ### Open the Command Palette (Ctrl+Shift+P on Windows/Linux or Cmd+Shift+P on macOS).
 
