@@ -25,6 +25,16 @@ code -r .
 taskkill /F /IM dotnet.execode -r .
 ```
 
+## Tab Keystrokes
+```
+### Shame there are navigation buttons like in EVERY OTHER EDITOR know to man (disappointed, wake up VS Code team. Improve your Dev experience. I'll send you the code)
+Tab - Move code right (indent)
+Shift+Tab - Move code left (outdent)
+Alternative:
+Ctrl+] - Indent right
+Ctrl+[ - Indent left
+```
+
 ## Missing OmniSense in VS Code
 1) Got to Command Pallette
 2) Type C#
