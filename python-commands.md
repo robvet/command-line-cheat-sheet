@@ -108,13 +108,18 @@ pip install -r requirements.txt
 
 ### Create Notebook
 ```
-# Create new virtual environment
+
+# Plumbing: Create new virtual environment
 python -m venv .venv<projectname>
 
 # Activate it
 .\.venv\Scripts\activate
 
 # Install ipykernel using PIP
+ - Enables Jupyter notebook support - Without ipykernel, you can't run Python code in Jupyter notebooks
+ - Registers the Python environment - Makes your current Python environment available as a kernel option in Jupyter
+ - Provides interactive features - Enables features like code completion, introspection, and rich output display
+ - VS Code integration - Allows VS Code to run Jupyter noteboo
 pip install ipykernel
 
 # Install a new Kernel
