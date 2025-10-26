@@ -1,5 +1,41 @@
 # Python Commands Cheat-Sheet
 
+## Scafold Py Project
+
+```
+### Open the Command Palette (Ctrl+Shift+P on Windows/Linux or Cmd+Shift+P on macOS).
+
+### Search for and select Python Envs: Create Project from Template.
+
+### Choose your template:
+ - Package: Scaffolds a complete Python package with a pyproject.toml, src directory, and boilerplate files.
+ - Script: Creates a single Python script with boilerplate code.
+
+###Follow the prompts to name your project and, for a package, to automatically create a virtual environment inside your workspace. 
+
+```
+
+### Actviate\Deactivate Environment
+```
+# from PowerShell
+.venv\Scripts\activate.ps1
+
+# Linix
+source .venv-mcp-postgres/Scripts/activate
+
+# Other
+.\.venv\Scripts\activate
+
+# Steps to Change the Python Environment:
+ - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
+ - Search for "Python: Select Interpreter": Begin typing "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
+
+# Deactivate
+deactivate
+```
+
+
+
 ## Environments
 
 ### Actviate\Deactivate Environment
