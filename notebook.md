@@ -2,6 +2,49 @@
 
 Quick reference for Jupyter Notebooks
 
+### Create Notebook
+```
+
+# Plumbing: Create new virtual environment
+python -m venv .venv<projectname>
+
+# Activate it
+.\.venv\Scripts\activate
+
+# Install ipykernel using PIP
+ - Enables Jupyter notebook support - Without ipykernel, you can't run Python code in Jupyter notebooks
+ - Registers the Python environment - Makes your current Python environment available as a kernel option in Jupyter
+ - Provides interactive features - Enables features like code completion, introspection, and rich output display
+ - VS Code integration - Allows VS Code to run Jupyter noteboo
+pip install ipykernel
+
+# Install Jupyter notebook support
+pip install jupyter
+
+# Register your venv as a Jupyter kernel:
+ - Registers existing venv as a Jupyter kernel so notebooks can use it.
+python -m ipykernel install --user --name=your_project_name # replace projectname with what you want to call the kernel
+
+# Create new notebook (.ipynb file)
+Command Palette: Ctrl+Shift+P → type "Create: New Jupyter Notebook"
+From 'Select Kernel' dropdown on right-hand side, select Python Environment, and find your current venv (it should be the default selection)
+
+# Select your kernel in the notebook
+Click kernel selector (top right) → choose your registered kernel name
+
+# Test Notebook
+Input into notebook to test:
+ print("Hello from notebook!")
+ import sys
+ print(f"Python: {sys.executable}")
+
+# Go to town!
+
+```
+
+
+
+
 ## C-Sharp
 ### Login into an Azure Tenant
 ```
