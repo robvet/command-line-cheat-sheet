@@ -16,49 +16,32 @@
 
 ```
 
-### Actviate\Deactivate Environment
+## Create Python Virtual Environment (VS Code)
+
+### One-shot fast-ramp for venv
 ```
-# from PowerShell
-.venv\Scripts\activate.ps1
+# Create new virtual environment
+python -m venv .venv
 
-# Linix
-source .venv-mcp-postgres/Scripts/activate
+## Steps to Change the Python Environment:
+ - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
+ - Search for "Python: Select Interpreter": Begin typing
+ - "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
 
-# Other
+# activate environment
+## from PowerShell
+.venv5\Scripts\activate.ps1
+
+## from Other
 .\.venv\Scripts\activate
 
-# Steps to Change the Python Environment:
- - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
- - Search for "Python: Select Interpreter": Begin typing "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
+# Install packages
+## MAKE SURE YOU POINTING to your virtual environment 
+pip install -r requirements.txt
 
-# Deactivate
-deactivate
 ```
 
-
-
-## Environments
-
-### Actviate\Deactivate Environment
-```
-# from PowerShell
-.venv\Scripts\activate.ps1
-
-# Linix
-source .venv-mcp-postgres/Scripts/activate
-
-# Other
-.\.venv\Scripts\activate
-
-# Steps to Change the Python Environment:
- - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
- - Search for "Python: Select Interpreter": Begin typing "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
-
-# Deactivate
-deactivate
-```
-
-### Python Virutal Environments
+### Explicit Instructions for venv
 ```
 # Create new virtual environment
 python -m venv .venv<projectname>
@@ -105,7 +88,26 @@ pip install -r requirements.txt
 
 ```
 
+## Manage Virtual Environments
 
+### Actviate\Deactivate Environment
+```
+# from PowerShell
+.venv\Scripts\activate.ps1
+
+# Linix
+source .venv-mcp-postgres/Scripts/activate
+
+# Other
+.\.venv\Scripts\activate
+
+# Steps to Change the Python Environment:
+ - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
+ - Search for "Python: Select Interpreter": Begin typing "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
+
+# Deactivate
+deactivate
+```
 
 ### Associate venv with app
 ```
