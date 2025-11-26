@@ -3,6 +3,11 @@
 ## Scafold Enviroment (VS Code)
 
 ### Scafold Python Project from Command Palette
+
+```
+### Install the 'Python Environments' extension in Vs Code.
+```
+
 ```
 ### Open the Command Palette (Ctrl+Shift+P on Windows/Linux or Cmd+Shift+P on macOS).
 
