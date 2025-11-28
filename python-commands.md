@@ -1,5 +1,14 @@
 # Python Commands Cheat-Sheet
 
+## Run/Debug
+
+### Run/Debug
+
+```
+### To Debug: <F5>
+### To Run: <Ctrl><F5>
+```
+
 ## Scafold Enviroment (VS Code)
 
 ### Scafold Python Project from Command Palette
