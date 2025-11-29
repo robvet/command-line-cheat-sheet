@@ -128,6 +128,12 @@ deactivate
 python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
 ```
 
+### Socket in Use
+```
+netstat -ano | findstr :8000
+taskkill /F /PID 44744
+```
+
 ### Python Versions
 ```
 # Determine if and what version of a Python runtime is installed
