@@ -20,6 +20,16 @@ code . -r
 code -r .
 ```
 
+## VS Code gets flacky
+```
+Try reloading the window after selecting the interpreter (Ctrl + Shift + P → “Developer: Reload Window”) — some issues resolve only after a reload. (Users in some threads report this fixed “Select Interpreter” glitches.)
+
+Ctrl + Shift + P → “Developer: Reload Window”
+```
+
+
+
+
 ## Kill all processes in VS Code
 ```
 taskkill /F /IM dotnet.execode -r .
