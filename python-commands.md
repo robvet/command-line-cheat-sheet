@@ -9,6 +9,14 @@
 ### To Run: <Ctrl><F5>
 ```
 
+
+## Socket in Use
+```
+netstat -ano | findstr :8000
+taskkill /F /PID 44744
+```
+
+
 ## Scafold Enviroment (VS Code)
 
 ### Scafold Python Project from Command Palette
@@ -128,11 +136,7 @@ deactivate
 python -m ipykernel install --user --name=obv-env --display-name "Python (obv-env)"
 ```
 
-### Socket in Use
-```
-netstat -ano | findstr :8000
-taskkill /F /PID 44744
-```
+
 
 ### Python Versions
 ```
