@@ -17,6 +17,7 @@ taskkill /F /PID 44744
 
 ## Terminal Stuck in KeyboradInterrupt
 ```
+Try <ctrl><z>
 
 Soft interrupt: press Ctrl+C once (may require focus on terminal). If the shell shows another prompt or the Python REPL returns, you're done.
 If you see a partial traceback or a second-level KeyboardInterrupt, press Enter, then Ctrl+C again.
