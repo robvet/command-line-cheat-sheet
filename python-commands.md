@@ -9,11 +9,21 @@
 ### To Run: <Ctrl><F5>
 ```
 
-
 ## Socket in Use
 ```
 netstat -ano | findstr :8000
 taskkill /F /PID 44744
+```
+
+## Terminal Stuck in KeyboradInterrupt
+```
+
+Soft interrupt: press Ctrl+C once (may require focus on terminal). If the shell shows another prompt or the Python REPL returns, you're done.
+If you see a partial traceback or a second-level KeyboardInterrupt, press Enter, then Ctrl+C again.
+If you're inside Python REPL, exit cleanly:
+Press Ctrl+D (EOF) or type exit() and press Enter.
+### Open the Command Palette (Ctrl+Shift+P on Windows/Linux or Cmd+Shift+P on macOS).
+
 ```
 
 
