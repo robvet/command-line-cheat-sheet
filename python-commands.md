@@ -213,6 +213,21 @@ code -d global.txt venv.txt   # opens a side-by-side diff in VS Code
 
 ```
 
+### Reinstall dependencies to ensure consistency
+```
+# Unintall depedencies
+# Clear cahced pacakges to ensure you're installing new packages
+pip cache purge
+# Freeze to generate a new list of currently installed packages with thier versions
+# this will overwirte the old file
+pip freeze > requirements.txt
+```
+
+### Show Conda (non-venv) Environments
+
+```
+conda env list
+```
 ### Display packages in tree format with dependencies
 ```
 pipdeptree
@@ -228,6 +243,14 @@ pip uninstall <mkdocs mkdocs-material> <package name>
 python -X importtime -c "import <package name>"
 ```
 
+## FastApi
+
+### Start Fastapi 
+```
+uvicorn main:app --reload
+uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
+```
+
 ### FastAPI: Check if port 8000 (default port) is free
 ```
 netstat -ano | findstr :8000
@@ -235,23 +258,28 @@ netstat -ano | findstr :8000
 taskkill /PID <PID> /F
 ```
 
-### Reinstall dependencies to ensure consistency
+### Launch Browser at start of Python program
 ```
-# Unintall depedencies
-# Clear cahced pacakges to ensure you're installing new packages
-pip cache purge
-# Freeze to generate a new list of currently installed packages with thier versions
-# this will overwirte the old file
-pip freeze > requirements.txt
-```
-### Start Fastapi 
-```
-uvicorn main:app --reload
-```
+# add package
+import asyncio
+import webbrowser
+from contextlib import asynccontextmanager
 
-### Show Conda (non-venv) Environments
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup: open browser after a short delay to ensure server is ready
+    async def open_browser():
+        await asyncio.sleep(1.5)  # Give server time to start
+        webbrowser.open("http://127.0.0.1:8000/docs")
+    
+    asyncio.create_task(open_browser())
+    yield
+    # Shutdown (if needed)
+app = FastAPI(title="rob-gpt", lifespan=lifespan)
 
-```
-conda env list
+
+netstat -ano | findstr :8000
+#Kill process if necessary
+taskkill /PID <PID> /F
 ```
 
