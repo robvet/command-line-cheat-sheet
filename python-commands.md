@@ -87,15 +87,26 @@ python -3.12 -m venv .venv
 
 # Activate virtual environment
 
-###You have multiple ways to activate environments:
+###You have multiple ways to activate virutal environments:
  - Method 1: VS Code Python Interpreter
  - Open new terminal (Ctrl+Shift+`)
- - Select interpreter 
+ - Select interpreter  
 Easiest for development
 
 Method 2: Manual activation
 # Windows
 .\.venv\Scripts\activate
+
+Method #3: Few Shot Testing
+.\.venv\Scripts\python.exe -c "from app.main import app"
+
+# Why the full path works
+When you run .\.venv\Scripts\python.exe, it:
+Uses the Python interpreter from that venv
+Automatically uses packages installed in that venv
+Doesn't require activation
+
+
 
 # conda
 - conda activate apiweaver (not .venv command - that's different)
