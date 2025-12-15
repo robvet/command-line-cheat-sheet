@@ -237,8 +237,10 @@ pipdeptree
 ```
 pip uninstall <mkdocs mkdocs-material> <package name>
 
-# Clear packages from root environment
-& "C:\Program Files\Python311\python.exe" -m pip uninstall browser_cookie3 -y
+# what packages are installed in root:
+& "C:\Program Files\Python311\python.exe" -m pip list
+# only keep pip and setuptools, clear everything else
+& "C:\Program Files\Python311\python.exe" -m pip uninstall greenlet lz4 playwright pycryptodomex pyee python-dotenv pywin32 shadowcopy typing_extensions WMI browser_cookie3 -y
 ```
 
 ### Obtain deeper diagnostic for a packge
