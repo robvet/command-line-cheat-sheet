@@ -236,6 +236,9 @@ pipdeptree
 ### Uninstall packages, venv or python fodler
 ```
 pip uninstall <mkdocs mkdocs-material> <package name>
+
+# Clear packages from root environment
+& "C:\Program Files\Python311\python.exe" -m pip uninstall browser_cookie3 -y
 ```
 
 ### Obtain deeper diagnostic for a packge
