@@ -270,6 +270,18 @@ deactivate
 & "C:\Program Files\Python311\python.exe" -m pip list --format=freeze | Where-Object {$_ -notmatch "^pip|^setuptools"} | ForEach-Object {& "C:\Program Files\Python311\python.exe" -m pip uninstall $_.Split("==")[0] -y}
 ```
 
+### Show packages in root with installation date
+```
+pip list --format=freeze | ForEach-Object {
+    $pkg = $_.Split("==")[0]
+    $path = & python -c "import importlib.util; print(importlib.util.find_spec('$pkg').origin if importlib.util.find_spec('$pkg') else '')" 2>$null
+    if ($path) {
+        $time = (Get-Item $path).LastWriteTime
+        [PSCustomObject]@{Package=$pkg; LastModified=$time}
+    }
+} | Format-Table -AutoSize
+```
+
 ### Show Conda (non-venv) Environments
 
 ```
