@@ -27,6 +27,7 @@ Press Ctrl+D (EOF) or type exit() and press Enter.
 
 ```
 
+## List 
 
 ## Scafold Enviroment (VS Code)
 
@@ -223,6 +224,41 @@ pip cache purge
 # Freeze to generate a new list of currently installed packages with thier versions
 # this will overwirte the old file
 pip freeze > requirements.txt
+```
+
+### List Packages
+
+## List Packages in VENV
+```
+# activate venv
+
+ - PowerShell
+.\venv\Scripts\Activate.ps1
+
+- bash
+.\venv\Scripts\Activate.ps1
+
+# list packages in venv
+pip list
+```
+
+## List Packages in root python folder
+```
+# deactivage venv, if necessary:
+deactivate
+
+# determine location of root python folder
+# First, try:
+& "C:\Program Files\Python311\python.exe" -m pip list
+
+# if not correct, then find python root folder:
+ - Find Python executable path
+   where python
+ - Or get detailed info
+   python -c "import sys; print(sys.executable)"
+
+# List packages in root Python
+& "<root python folder>" -m pip list
 ```
 
 ### Uninstall local (venv) packages, venv or python fodler
