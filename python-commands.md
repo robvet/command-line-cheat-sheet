@@ -177,7 +177,9 @@ py -3.12 --version
 
 ## Packages
 
-### List Packages in VENV
+### List Packages
+
+#### List Packages in VENV
 ```
 # activate venv
 
@@ -191,7 +193,7 @@ py -3.12 --version
 pip list
 ```
 
-### List Packages in root python folder
+#### List Packages in root python folder
 ```
 # deactivage venv, if necessary:
 deactivate
