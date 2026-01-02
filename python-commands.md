@@ -174,7 +174,9 @@ py -3.12 --version
 \docs
 ```
 
-### Packages
+## Packages
+
+### Install Packages
 ```
 # Install pacakges
 pip install -r requirements.txt
@@ -223,6 +225,51 @@ pip cache purge
 pip freeze > requirements.txt
 ```
 
+### Uninstall local (venv) packages, venv or python fodler
+```
+# activate venv
+
+ - PowerShell
+.\venv\Scripts\Activate.ps1
+
+- bash
+.\venv\Scripts\Activate.ps1
+
+# list packages in venv
+pip list
+
+# uninstall package(2)
+pip uninstall package1 package2 -y
+
+# deactivage venv, if necessary
+deactivate
+```
+
+### Uninstall root python folder packages 
+```
+# deactivage venv, if necessary:
+deactivate
+
+# determine location of root python folder
+# First, try:
+& "C:\Program Files\Python311\python.exe" -m pip list
+
+# if not correct, then find python root folder:
+ - Find Python executable path
+   where python
+ - Or get detailed info
+   python -c "import sys; print(sys.executable)"
+
+# List packages in root Python
+& "<root python folder>" -m pip list
+
+ Uninstall specific packages
+& "C:\Program Files\Python311\python.exe" -m pip uninstall package1 package2 package3 -y
+
+# Uninstall everything except pip and setuptools
+& "C:\Program Files\Python311\python.exe" -m pip list --format=freeze | Where-Object {$_ -notmatch "^pip|^setuptools"} | ForEach-Object {& "C:\Program Files\Python311\python.exe" -m pip uninstall $_.Split("==")[0] -y}
+```
+
 ### Show Conda (non-venv) Environments
 
 ```
@@ -233,8 +280,21 @@ conda env list
 pipdeptree
 ```
 
-### Uninstall packages, venv or python fodler
+### Obtain deeper diagnostic for a packge
 ```
+python -X importtime -c "import <package name>"
+```
+
+
+# misc package code
+```
+pip uninstall <mkdocs mkdocs-material> <package name>
+
+# what packages are installed in root:
+& "C:\Program Files\Python311\python.exe" -m pip list
+# only keep pip and setuptools, clear everything else
+& "C:\Program Files\Python311\python.exe" -m pip uninstall greenlet lz4 playwright pycryptodomex pyee python-dotenv pywin32 shadowcopy typing_extensions WMI browser_cookie3 -y
+
 pip uninstall <mkdocs mkdocs-material> <package name>
 
 # what packages are installed in root:
@@ -243,10 +303,7 @@ pip uninstall <mkdocs mkdocs-material> <package name>
 & "C:\Program Files\Python311\python.exe" -m pip uninstall greenlet lz4 playwright pycryptodomex pyee python-dotenv pywin32 shadowcopy typing_extensions WMI browser_cookie3 -y
 ```
 
-### Obtain deeper diagnostic for a packge
-```
-python -X importtime -c "import <package name>"
-```
+
 
 ## FastApi
 
