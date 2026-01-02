@@ -27,9 +27,26 @@ Press Ctrl+D (EOF) or type exit() and press Enter.
 
 ```
 
-## List 
+## Virtual Environments
 
-## Scafold Enviroment (VS Code)
+### Actviate\Deactivate Environment
+```
+# from PowerShell
+.venv\Scripts\activate.ps1
+
+# Linix
+source .venv-mcp-postgres/Scripts/activate
+
+# Other
+.\.venv\Scripts\activate
+
+# Steps to Change the Python Environment:
+ - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
+ - Search for "Python: Select Interpreter": Begin typing "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
+
+# Deactivate
+deactivate
+```
 
 ### Scafold Python Project from Command Palette
 
@@ -135,24 +152,7 @@ pip install -r requirements.txt
 
 ## Manage Virtual Environments
 
-### Actviate\Deactivate Environment
-```
-# from PowerShell
-.venv\Scripts\activate.ps1
 
-# Linix
-source .venv-mcp-postgres/Scripts/activate
-
-# Other
-.\.venv\Scripts\activate
-
-# Steps to Change the Python Environment:
- - Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
- - Search for "Python: Select Interpreter": Begin typing "Python: Select Interpreter" into the Command Palette search bar and select the corresponding option when it appears.
-
-# Deactivate
-deactivate
-```
 
 ### Associate venv with app
 ```
