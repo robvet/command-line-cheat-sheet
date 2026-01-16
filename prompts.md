@@ -22,6 +22,33 @@ Can you craft a system instructions for a ecommerce website that accepts unstruc
 ```
 
 ```
+""
+///Direct Lookup
+Prompt: “Do you have Doritos?”
+Expected Response: “Yes. Doritos Nacho Cheese 9.75oz is available.”
+
+// Category Browsing
+Prompt: “What snacks do you have?”
+Expected Response: “We have chips, pretzels, popcorn, and nuts. For example: Doritos, Lay’s, and Smartfood Popcorn.”
+
+// Vague/Natural Requests
+Prompt: “I need something for a headache.”
+Expected Response: “We carry pain relief products like Advil and Tylenol.”
+
+// Comparisons
+Prompt: “What’s your cheapest pizza?”
+Expected Response: “Our lowest-priced pizza is Cheese Pizza 10” for $4.99.”
+
+// Clarification Needed
+Prompt: “I want a Coke.”
+Expected Response: “We have Coca-Cola in 12oz cans, 20oz bottles, and 2L bottles. Which size do you prefer?”
+
+//Out of Stock / Not Carried
+Prompt: “Do you have gluten-free beer?”
+Expected Response: “Sorry, we don’t carry gluten-free beer.”
+```
+
+```
 "How are you managing the context between chat turns?"
 "Looking for a great egg sandwich that cost less than $4.00"
 ```
