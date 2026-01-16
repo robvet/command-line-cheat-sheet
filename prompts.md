@@ -14,10 +14,16 @@ Can you craft a system instructions for a ecommerce website that accepts unstruc
 
 ```
 "I love peanut butter cups and cookies. What can I buy that has both?"
+"Can you deliver to my home"
 "my address is 4410 Kelly Drive, Richardson, TX"
 "What is the address of nearest 7-11 store for me?"
+"Can you check inventory at the nearest store"
 ** I can’t see store addresses in the files you shared—only product inventory for a nearby 7‑Eleven (store ID 12202), and those files don’t include a street addres
 ```
 
+```
+"How are you managing the context between chat turns?"
+"Looking for a great egg sandwich that cost less than $4.00"
+```
 
 
