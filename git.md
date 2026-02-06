@@ -47,12 +47,14 @@ git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spaceg
 ## Delete Branch
 ```
 # Delete local branch
-git branch -d  local_branch_name
+git branch -d  <local_branch_name>
+
 # Delete local branch with unmerged changes - D is alias Delete Force
-git branch -D local_branch_name
+git branch -D <local_branch_name>
+
 # Delete remote branch
-git push remote_name -d remote_branch_name>
-git push origin -d test
+git push origin -d <remote_branch_name>
+
 # Reference
 https://www.freecodecamp.org/news/git-delete-branch-how-to-remove-a-local-or-remote-branch/
 ```
