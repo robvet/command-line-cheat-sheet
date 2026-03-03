@@ -27,6 +27,20 @@ Press Ctrl+D (EOF) or type exit() and press Enter.
 
 ```
 
+## Stubborn Cached Values
+```
+# First, check cache value:
+echo $AGENT_TIMEOUT
+
+# IF cached, then clear:
+#PS:
+Remove-Item Env:AGENT_TIMEOUT
+
+# Bash:
+unset AGENT_TIMEOUT
+
+```
+
 ## Virtual Environments
 
 ### Actviate\Deactivate Environment
