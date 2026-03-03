@@ -44,6 +44,20 @@ git remote -v # Lists remote repos
 git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git # Add remote repo, in this case, upstream
 ```
 
+## git stash
+```
+# Stash — git stash push saved the tasks.json change to a temporary holding area (you're right, it's like a global scratchpad — it's repo-wide, not branch-specific)
+
+# use case: merged branch into main, but left one change uncommitted
+
+# Checkout main — couldn't switch with uncommitted changes, but stash cleared the way
+# Pull — got the latest main (including your merged PR)
+# Stash pop — pulled tasks.json back out of the stash and applied it to the working tree
+# Add + commit + push — committed just that one file to main
+# Think of git stash like a clipboard in C# — stash push is like copying an object to a temporary variable, and stash pop pastes it back and clears the clipboard. It rides with the repo, not the branch, so you can stash on one branch and pop 
+
+```
+
 ## Delete Branch
 ```
 # Delete local branch
