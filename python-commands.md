@@ -231,6 +231,9 @@ deactivate
 # Install pacakges
 pip install -r requirements.txt
 
+# Install pacakges with verbose messaging
+pip install -r requirements.txt -v
+
 # install packages
 pip install --force-reinstall -r requirements.txt
 
